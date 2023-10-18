@@ -1,0 +1,14 @@
+#wrapper {
+    height:100vh
+}
+#contact {
+
+}
+ul.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.contact-list  li {
+    display: inline;
+}
