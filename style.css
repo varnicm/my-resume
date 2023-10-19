@@ -1,8 +1,46 @@
+ul li {
+    list-style: square;
+}
+strong {
+    font-weight: 600;
+}
 #wrapper {
-    height:100vh
+    width: 8.5in;
+    margin:0 auto;
+    height:11in;
+    padding:0.3in 0.7in;
+}
+#wrapper h1{
+    margin-top:10px;
+    font-size: 1.8rem !important;
 }
 #contact {
+    margin-bottom:8px !important
 
+}
+#edu {
+    font-size: 10pt;
+}
+#edu ul {
+    margin-bottom:0.6em
+}
+#exp {
+    font-size: 10pt;
+}
+#exp ul {
+    margin-top:0;
+    margin-bottom:0.2em
+}
+#exp p {
+    margin-bottom:0.4em
+}
+#awd {
+    font-size: 10pt;
+  
+}
+#skills {
+    font-size: 10pt;
+    font-weight: bold;
 }
 ul.contact-list {
     list-style-type: none;
@@ -11,4 +49,102 @@ ul.contact-list {
 }
 ul.contact-list  li {
     display: inline;
+    font-size: 11pt;
+    font-family: avenir next;
+    margin-right:18px
+}
+.circle-icon {
+    border-radius:50%;
+    width: 23px;
+    height:23px;
+    border:1px solid #666;
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 10pt;
+
+
+
+}
+.circle-icon::before {
+}
+
+.alert {
+    --bs-alert-padding-y: 0.2rem;
+    border:0;
+    margin-bottom:0.5em;
+    font-size: 11pt;
+} 
+ul.skills {
+    list-style-type: none;
+    margin:8px 0px 16px 0px
+
+}
+ul.skills li{
+border:1px solid #aaa;
+border-radius: 8px;
+padding:3px 6px;
+display: inline;
+font-family: avenir next;
+font-size: 9pt;
+margin:0 3px;
+font-weight: normal;
+
+}
+ul.skills li::before{
+    content: '#';
+    }
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.event {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* This will push content and date to the edges */
+    padding: 15px 0;
+}
+
+.event:before, .event:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+}
+
+/* Vertical line */
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #333; /* Color of the vertical line */
+    z-index: -1;
+}
+
+/* Circle for each event */
+.event:before {
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    margin-left: -5px; /* Half of width to center it */
+    margin-top: -7px; /* Half of height to center it */
+    border-radius: 50%;
+    background: #555; /* Color of the circle */
+    z-index: 1;
+}
+
+.content {
+    flex-basis: 50%; /* Give it half of the available space */
+    padding-right: 60px; /* Space for the vertical line and circle */
+}
+
+.date {
+    flex-basis: 50%; /* Give it half of the available space */
+    text-align: right; /* Align the text to the right */
+    padding-left: 60px; /* Space for the vertical line and circle */
 }
