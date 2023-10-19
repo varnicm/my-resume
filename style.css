@@ -40,7 +40,7 @@ strong {
 }
 #skills {
     font-size: 10pt;
-    font-weight: bold;
+    font-weight: 500;
 }
 ul.contact-list {
     list-style-type: none;
@@ -75,6 +75,9 @@ ul.contact-list  li {
     margin-bottom:0.5em;
     font-size: 11pt;
 } 
+.alert-secondary {
+    background-color: #eee !important;
+}
 ul.skills {
     list-style-type: none;
     margin:8px 0px 16px 0px
